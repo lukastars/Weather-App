@@ -61,7 +61,10 @@ function changeHoursPage(hoursPage) {
 
     dot3.classList.add('dot-selected');
   }
-  hourlyContainer.classList.toggle('change');
+  hourlyContainer.classList.add('change');
+  hourlyContainer.onanimationend = () => {
+    hourlyContainer.classList.remove('change');
+  };
 }
 
 function displayDailyForecast() {
