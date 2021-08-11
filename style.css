@@ -71,7 +71,7 @@ body {
 .weather-info__units-c {
   margin-bottom: 2.5rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -303,7 +303,7 @@ body {
 
   .weather-info__units-f,
   .weather-info__units-c {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .weather-details__label {
@@ -514,7 +514,7 @@ body {
 }
 
 .change {
-  animation: fadeIn 0.25s;
+  animation: fadeIn 0.5s;
 }
 @keyframes fadeIn {
   from {
