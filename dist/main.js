@@ -53,8 +53,7 @@ async function getCoords(url) {
     const { coord } = weatherData;
     coord.name = weatherData.name;
     coord.country = weatherData.sys.country;
-    console.log(weatherData);
-    console.log(weatherData.weather);
+
     return coord;
   } catch (err) {
     console.log(err);
@@ -67,7 +66,6 @@ async function getForecast(url) {
   const response = await fetch(url);
   const forecastData = await response.json();
   (0,_domFunctions__WEBPACK_IMPORTED_MODULE_0__.hideLoading)();
-  console.log(forecastData);
   return forecastData;
 }
 
